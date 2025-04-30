@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Login Portal</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <!-- Container for the login form -->
+  <div class="login-container">
+    <h2>User Authentication</h2>
+
+    
+  <!-- Dropdown to select user role -->
+    <select id="role">
+      <option value="">Select Role</option>
+      <option value="Department Head">Department Head</option>
+      <option value="Faculty">Faculty</option>
+      <option value="Student Officer">Student Officer</option>
+      <option value="Student">Student</option>
+    </select>
+    <input type="password" id="password" placeholder="Enter your password">
+    <button onclick="authenticate()">Login</button>
+
+     <!-- Area to display success or error messages -->
+    <div class="message" id="message"></div>
+  </div>
+</body>
+</html>
